@@ -1,48 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <title>Wordle</title>
-
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Load jQuery and jQuery UI for animations -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Clone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="content">
-        <h1>WORDLE</h1>
-        <h2 id="correct_answer"></h2>
-
-        <!-- Game board -->
-        <div id="game">
-            <div class="letter_grid"></div>
-
-            <!-- User input section -->
-            <div id="inputs">
-                <input type="text" name="guess" id="guess" maxlength="5" placeholder="Enter a 5-letter word">
-                <input type="button" value="Enter" id="enter">
-                <input type="button" value="New Game" id="newgame">
-            </div>
-            <div id="error_msg"></div>
-        </div>
-
-        <!-- Display used letters -->
-        <div id="used_letters">
-            <h2>Used Letters</h2>
-            <div id="used_letters_box">
-                <div id="used_letters_grid"></div>
-            </div>
-            <div id="avg_score"></div>
-        </div>
+    <h1>Wordle Clone</h1>
+    
+    <div id="board"></div>
+    
+    <div id="controls">
+        <input type="text" id="guess-input" maxlength="5" placeholder="Enter 5-letter word">
+        <button id="guess-button">Guess</button>
     </div>
-
-    <!-- Link to external JavaScript file -->
+    
+    <div id="keyboard"></div>
+    
+    <button id="restart">Restart Game</button>
+    
     <script src="wordle.js"></script>
 </body>
-
 </html>

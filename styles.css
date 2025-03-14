@@ -1,0 +1,199 @@
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+#correct_answer {
+    height: fit-content;
+}
+
+#game,
+#used_letters {
+    display: inline-block;
+    width: 40%;
+    margin: 0px 25px 50px 25px;
+    vertical-align: top;
+}
+
+#used_letters {
+    margin-top: 0px;
+    margin-left: 50px;
+    width: fit-content;
+}
+
+#avg_score {
+    margin: 20px 0px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#game {
+    width: fit-content;
+}
+
+#used_letters_box {
+    vertical-align: top;
+    border: 3px solid white;
+    width: 330px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#used_letters_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: max-content;
+    gap: 10px;
+}
+
+#content {
+    min-height: 200px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+html {
+    background-color: rgb(30, 30, 30, 1);
+}
+
+.letter_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: max-content;
+    gap: 10px;
+}
+
+.letter_block {
+    display: flex;
+    margin: auto auto;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 40px;
+    width: 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+#guess {
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    width: 407px;
+    box-sizing: content-box;
+    font-size: 35px;
+    border-radius: 0;
+    height: 50px;
+    text-align: center;
+}
+
+#inputs {
+    width: 415px;
+}
+
+#enter,
+#newgame {
+    width: 415px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(30, 30, 30, 1);
+    border: 3px solid #e4e4e4;
+    border-radius: 3px;
+    color: #e4e4e4;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.green {
+    background-color: green;
+}
+
+.gold {
+    background-color: rgb(202, 172, 2);
+}
+
+.grey {
+    background-color: grey;
+}
+
+.white {
+    border: 2px solid grey;
+}
+
+#error_msg {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 950px) {
+    #used_letters {
+        margin: 20px 25px;
+    }
+
+    #game {
+        margin-bottom: 0px;
+    }
+
+    #avg_score {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #correct_answer {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .letter_block {
+        width: 55px;
+        height: 40px;
+        font-size: 35px;
+    }
+
+    #enter,
+    #newgame,
+    #guess,
+    #inputs {
+        width: 300px;
+    }
+
+    #guess,
+    #newgame {
+        width: 292px;
+    }
+
+    #inputs {
+        margin: 0 auto;
+    }
+
+    #game {
+        text-align: center;
+    }
+
+    #used_letters_box {
+        width: 250px;
+    }
+
+    #used_letters {
+        margin-top: 0px;
+    }
+}
